@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">1week</string>
+    <string name="inital_value">\n</string>
+    <string name="initial_value" />
+</resources>
