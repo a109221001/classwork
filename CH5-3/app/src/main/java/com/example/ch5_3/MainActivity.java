@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public abstract class MainActivity extends AppCompatActivity implements View.OnClickListener,View.OnLongClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener,View.OnLongClickListener{
 
     private float original_size = 20;
 
