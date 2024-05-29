@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements DialogInterface.O
         about.setOnClickListener(v -> {
             new AlertDialog.Builder(this)
                     .setTitle("關於本書")
-                    .setMessage("安卓程式設計與應用\n作者:nm\n教師:nd")
+                    .setMessage("安卓程式設計與應用\n作者:人\n教師:人二號")
                     .setCancelable(true)
                     .setPositiveButton("確定",null)
                     .show();
