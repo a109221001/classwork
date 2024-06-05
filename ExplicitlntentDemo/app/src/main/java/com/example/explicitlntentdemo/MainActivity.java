@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText txtOpd1,txtOpd2;
                 txtOpd1 = (EditText)findViewById(R.id.txtOpd1);
                 txtOpd2 =(EditText) findViewById(R.id.txtOpd2);
-                Intent intent =new Intent(MainActivity.this,OpActivity.class);
-                Bundle bundle=new Bundle();
+                Intent intent = new Intent(MainActivity.this, com.example.explicitlntentdemo.OpActivity.class);
+                Bundle bundle = new Bundle();
                 bundle.putString("OPERAND01",txtOpd1.getText().toString());
                 bundle.putString("OPERAND02",txtOpd2.getText().toString());
                 intent.putExtras(bundle);
@@ -38,15 +38,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     @Override
-    protected  void  onActivityResult(int requestCode,int resultCode,Intent data){
+    protected  void  onActivityResult(int requestCode,int resultCode,Intent data)
+    {
         super.onActivityResult(requestCode,resultCode,data);
         switch (requestCode){
             case 1:
                 if (resultCode == RESULT_OK){
                     Bundle bundle = data.getExtras();
-                    output.setText("計算結果:"+bundle.getDouble("RESULT"));
+                    output.setText("計算結果"+bundle.getDouble("RESULT"));
                 }
                 break;
         }
     }
+
 }
